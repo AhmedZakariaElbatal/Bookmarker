@@ -1,0 +1,12 @@
+.content {
+    background-color: rgb(231, 230, 230);
+}
+.invaild-feedback{
+    background-color: rgb(224, 110, 110);
+  
+}
+.invaild-feedback h5{
+    color: rgb(105, 0, 0);
+    padding: 4px 0px;
+    border: 1px solid black;
+}

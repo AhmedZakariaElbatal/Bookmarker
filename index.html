@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="w-75 mx-auto my-5">
+        <h2 class="py-2 fw-bold text-secondary px-3">Bookmarker</h2>
+    </div>
+    <div class="container w-75 mx-auto  border border-start-0 border-end-0 p-4">
+        <div class="content py-2">
+        <h4 class="text-center fw-light my-5 text-dark fw-bold">Bookmark your favorite sites</h4>
+        <label for="bookmarkerName" class="text-center d-block"><p class="fw-bold">Site Name</p></label>
+        <input type="text" class="w-75 form-control mx-auto" placeholder="Bookmarker Name" id="bookmarkerName">
+        <div class="invaild-feedback my-2 text-danger w-75 rounded-2 text-center mx-auto" id="validNameAlert">
+        
+        </div>
+        <label for="websiteURL" class="text-center d-block"><p class="fw-bold my-2">Site URL</p></label>
+        <input type="text" class="w-75 form-control mx-auto" placeholder="Website URL" id="websiteURL">
+        <div class="invaild-feedback my-2 text-danger w-75 rounded-2 text-center mx-auto" id="validUrlAlert">
+        
+        </div>
+        <button class="btn btn-outline-primary d-block mx-auto my-4 px-4" onclick="addSite()">Add Site</button>
+    </div>
+    </div>
+    <div class="container">
+   <table class="table">
+       <thead class="text-start">
+           <tr>
+            <th>Index</th>
+               <th>Site Name</th>
+               <!-- <th>Site URL</th> -->
+               <th>Visit</th>
+               <th>Delete</th>
+           </tr>
+       </thead>
+       <tbody class="text-start" id="tableBody">
+
+       </tbody>
+   </table>
+
+    </div>
+    <div class="container">
+        <p class="mx-5 px-5 py-4 text-secondary">© 2019 Bookmarker Inc.</p>
+    </div>
+<script src="main.js"></script></body>
+</html>
